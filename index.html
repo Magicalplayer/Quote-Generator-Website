@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-    <script src="https://kit.fontawesome.com/d44d197ea7.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="ribbon ribbon-top-left">
-        <span id="category">category</span>
-      </div>
-      <h2>Quote of the Day</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Quote Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Random Quote Generator</h1>
 
-      <div class="quote"></div>
+    <select id="category">
+      <option value="">All Categories</option>
+      <option value="inspirational">Inspirational</option>
+      <option value="motivational">Motivational</option>
+      <option value="wisdom">Wisdom</option>
+      <option value="life">Life</option>
+      <option value="love">Love</option>
+    </select>
 
-      <div class="buttons">
-        <div class="icons">
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-solid fa-list"></i>
-          <i class="fa-regular fa-copy"></i>
-          <i class="fa-brands fa-twitter"></i>
-        </div>
-        <button id="generate">New Quote</button>
-      </div>
-    </div>
-  </body>
+    <input type="text" id="author" placeholder="Author name (optional)" autocomplete="off" />
+
+    <p id="quote">Click the button to see a quote!</p>
+    <button id="new-quote">New Quote</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
